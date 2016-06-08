@@ -6,6 +6,8 @@
 //  Copyright © 2016 Roman Rybachenko. All rights reserved.
 //
 
+#import "RealmDBManager.h"
+
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
@@ -16,7 +18,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [[RealmDBManager sharedInstance] deleteDatabase];
+    
     return YES;
 }
 
