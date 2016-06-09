@@ -13,6 +13,7 @@
 
 @property NSString *firstName;
 @property NSString *lastName;
+@property (readonly) NSString *name;
 @property NSInteger age;
 @property NSData *picture;
 @property NSDate *birthday;

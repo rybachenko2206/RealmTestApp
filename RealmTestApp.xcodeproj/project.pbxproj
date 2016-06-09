@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4253192B1D087BB000DD6652 /* RLMResults+ToNSArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 4253192A1D087BB000DD6652 /* RLMResults+ToNSArray.m */; };
 		42A020E71D05CE56007A35AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A020E61D05CE56007A35AF /* main.m */; };
 		42A020EA1D05CE56007A35AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A020E91D05CE56007A35AF /* AppDelegate.m */; };
 		42A020F01D05CE56007A35AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42A020EE1D05CE56007A35AF /* Main.storyboard */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		425319291D087BB000DD6652 /* RLMResults+ToNSArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RLMResults+ToNSArray.h"; sourceTree = "<group>"; };
+		4253192A1D087BB000DD6652 /* RLMResults+ToNSArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RLMResults+ToNSArray.m"; sourceTree = "<group>"; };
 		42A020E21D05CE56007A35AF /* RealmTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42A020E61D05CE56007A35AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		42A020E81D05CE56007A35AF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -96,6 +99,15 @@
 			name = ViewControllers;
 			sourceTree = "<group>";
 		};
+		425319281D087B2800DD6652 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				425319291D087BB000DD6652 /* RLMResults+ToNSArray.h */,
+				4253192A1D087BB000DD6652 /* RLMResults+ToNSArray.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		42A020D91D05CE55007A35AF = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +147,7 @@
 		42E26B5E1D05EC3300C19E6F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				425319281D087B2800DD6652 /* Categories */,
 				42E26B6D1D0808E900C19E6F /* Managers */,
 				42E26B6C1D0808DA00C19E6F /* RealmObjects */,
 			);
@@ -304,6 +317,7 @@
 				42E26B641D05F4B600C19E6F /* Dog.m in Sources */,
 				42E26B6B1D05FBEB00C19E6F /* PersonTableViewCell.m in Sources */,
 				42E26B611D05EC9200C19E6F /* Person.m in Sources */,
+				4253192B1D087BB000DD6652 /* RLMResults+ToNSArray.m in Sources */,
 				42E26B701D08091F00C19E6F /* RealmDBManager.m in Sources */,
 				42E26B671D05F82800C19E6F /* PersonsViewController.m in Sources */,
 				42A020E71D05CE56007A35AF /* main.m in Sources */,

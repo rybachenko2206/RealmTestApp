@@ -10,6 +10,8 @@
 #import <Realm/Realm.h>
 #import "Dog.h"
 #import "Person.h"
+#import "PersonTableViewCell.h"
+#import "RLMResults+ToNSArray.h"
 
 #import "PersonsViewController.h"
 
@@ -38,10 +40,11 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    
-    RLMResults<Dog *> *dogs = [Dog allObjects];
-    
+
     RLMResults<Person *> *persons = [Person allObjects];
+    
+    self.items = [[persons toArray] mutableCopy];
+    [self.tableView reloadData];
 }
 
 
@@ -54,7 +57,10 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return nil;
+    PersonTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[PersonTableViewCell cellIdentifier] forIndexPath:indexPath];
+    cell.person = self.items[indexPath.row];
+    
+    return cell;
 }
 
 

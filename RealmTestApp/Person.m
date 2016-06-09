@@ -31,4 +31,8 @@
     return linkingProperties;
 }
 
+- (NSString *)name {
+    return [NSString stringWithFormat:@"%@ %@", self.firstName, self.lastName];
+}
+
 @end
